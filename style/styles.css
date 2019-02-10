@@ -1,0 +1,273 @@
+html,
+body {
+	min-height: 100%;
+	font-family: "Source Sans Pro", sans-serif-condensed;
+	margin: 0;
+}
+
+a {
+	color: #FF6B6B;
+	text-decoration: none;
+}
+
+a:active,
+a:focus {
+	color: #060D20;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 1%;
+}
+
+
+	/* Nav Style */
+
+.nav-bg {
+	background: linear-gradient(to right, #C4CECD, #F2F4FF);
+	justify-content: center;
+	padding-left: 25%;
+	/*position: fixed;
+	width: 100%;*/
+}
+
+.nav-content {
+	display: flex;
+	width: 600px;
+	height: 75px;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+	/* Home Page Style */
+
+.home-bg {
+	background-image: url(../images/bg1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 50;
+	height: 100%;
+}
+
+.home-content {
+	color: #FF6B6B;
+	padding-top: 15%;
+	padding-bottom: 27%;
+}
+
+.home-name {
+	font-size: 65px;
+	text-align: center;
+	padding-left: 3%;
+}
+
+.home-title {
+	font-size: 24px;
+	text-align: center;
+	padding-left: 3%;
+}
+
+	/* Skills Page Style */
+
+.prof-bg {
+	background: linear-gradient(to right, #ECF3FD, #F0FBFF);
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 50;
+	height: 100%;
+}
+
+.prof-content {
+	color: #FF6B6B;
+	padding-top: 15%;
+	padding-bottom: 15%;
+}
+
+.prof-name {
+	font-size: 50px;
+	text-align: center;
+	padding-left: 3%;
+}
+
+.prof-list {
+	color: #4d626e;
+	font-size: 24px;
+	text-align: center;
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+	/* Experience Page Style */
+
+.exp-bg {
+	background: linear-gradient(to right, #ECF3FD, #F0FBFF);
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 50;
+	height: 100%;
+}
+
+.exp-title {
+	font-size: 50px;
+	margin: 0 0 50px 50px;
+	text-align: center;
+	color: #FF6B6B;
+}
+
+.mrl {
+	margin-right: 40px;
+	margin-left: 10px;
+}
+
+.timeline {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+	/* Timeline Item */
+
+.timeline-item {
+	position: relative;
+	padding-left: 40px;
+	padding-bottom: 40px;
+	overflow: hidden;
+}
+
+.timeline-item:last-child {
+	margin-bottom: 60px;
+}
+
+.timeline-item:nth-child(odd) .timeline-info {
+	float: left;
+	text-align: right;
+	padding-right: 30px;
+	padding-top: 8px;
+	color: #FF6B6B;
+	font-size: 16px;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+	float: right;
+	text-align: left;
+	padding-left: 30px;
+	padding-bottom: 8px;
+}
+
+.timeline-item:nth-child(even) .timeline-info {
+	float: right;
+	text-align: left;
+	padding-left: 30px;
+	padding-top: 8px;
+	color: #FF6B6B;
+	font-size: 16px;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+	float: left;
+	text-align: right;
+	padding-right: 30px;
+	padding-bottom: 8px;
+}
+
+/* Timeline Info */
+
+.timeline-info {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	margin: 0 0 .5em 0;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+
+.timeline-info,
+.timeline-content {
+	width: 47%;
+}
+
+/* Timeline Marker */
+
+.timeline-marker {
+	position: absolute;
+	left: 51%;
+	top: 0;
+	bottom: 0;
+}
+
+.timeline-marker::before {
+	background: #FF6B6B;
+	border: 3px solid transparent;
+	border-radius: 100%;
+	content: "";
+	display: block;
+	height: 15px;
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 15px;
+	transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.timeline-marker::after {
+	content: "";
+	width: 3px;
+	background: #CCD5DB;
+	display: block;
+	position: absolute;
+	top: 25px;
+	bottom: 0;
+	left: 9px;
+}
+
+/* Timeline Content */
+
+.timeline-content {
+	padding-bottom: 40px;
+	color: #4d626e;
+}
+
+.timeline-content p:last-child {
+	margin-bottom: 0;
+}
+
+.timeline-content {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+	/* Footer Style */
+
+.footer-bg {
+	background: linear-gradient(to right, #C4CECD, #F2F4FF);
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 50;
+	height: 100%;
+}
+
+.footer-content {
+	color: #FF6B6B;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	text-align: center;
+}
+
+.logo {
+	width: 40px;
+}
+
+.footer-contact {
+	display: grid;
+	justify-content: center;
+    grid-template-columns: 50px 50px 50px;
+}
+
+.footer-title {
+	font-size: 20px;
+	text-align: center;
+	padding-left: 3%;
+}
