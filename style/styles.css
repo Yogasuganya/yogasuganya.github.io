@@ -253,13 +253,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo {
-	width: 40px;
+	width: 45px;
 }
 
 .footer-contact {
 	display: grid;
 	justify-content: center;
-    grid-template-columns: 50px 50px 50px;
+    grid-template-columns: 55px 55px 55px;
 }
 
 .footer-title {
